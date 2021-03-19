@@ -8,8 +8,14 @@ const setLocalCartList = (state) => {
 //获取存储,数据持久化
 const getLocalCartList = () => {
   // { shopId: {shopName:'', productList:{ productId: {} }}}
-  if (localStorage?.cartList) {
-    return JSON.parse(localStorage?.cartList)
+
+  // if (localStorage?.cartList) {
+  //   return JSON.parse(localStorage?.cartList)
+  // } 法一
+  try {
+    return JSON.parse(localStorage.cartList);
+  } catch (e) {
+    return {}
   }
 }
 export default createStore({
@@ -86,6 +92,9 @@ export default createStore({
         }
       }
       setLocalCartList(state)
+    },
+    clearCartData (state, shopId) {
+      state.cartList[shopId].productList = {} //下订单后清除购物车
     }
   },
   actions: {
