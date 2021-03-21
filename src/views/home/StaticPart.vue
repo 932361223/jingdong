@@ -2,7 +2,7 @@
   <div>
     <div class="position">
       <span class="iconfont position__icon">&#xe680;</span>
-      北京理工大学国防科技园2号楼10层
+      广东省广州市天河区棠下
       <span class="iconfont position_notice">&#xe601;</span>
     </div>
     <div class="search">
@@ -47,7 +47,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../../style/viriables.scss";
 @import "../../style/mixins.scss";
 .position {
@@ -72,7 +72,7 @@ export default {
 .search {
   margin-bottom: 0.12rem;
   line-height: 0.32rem;
-  background: $search-bgColor;
+  // background: $search-bgColor;
   color: $search-fontColor;
   border-radius: 0.16rem;
   .iconfont {

@@ -1,6 +1,6 @@
 <template>
   <div class="nearby">
-    <h3 class="nearby__title">附近店铺</h3>
+    <h3 class="nearby__title">附近店铺<text style="display:inline-block;font-size:.1rem">功能都在这</text></h3>
     <router-link v-for="item in nearbyList"
                  :key="item._id"
                  :to="`/shop/${item._id}`">

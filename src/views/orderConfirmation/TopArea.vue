@@ -7,10 +7,10 @@
     </div>
     <div class="top__receiver">
       <div class="top__receiver__title">收货地址</div>
-      <div class="top__receiver__address">北京理工大学国防科技园2号楼10层</div>
+      <div class="top__receiver__address">广东省广州市天河区棠下</div>
       <div class="top__receiver__info">
-        <span class="top__receiver__info__name">瑶妹（先生）</span>
-        <span class="top__receiver__info__name">18911024266</span>
+        <span class="top__receiver__info__name">吴泽桐（先生）</span>
+        <span class="top__receiver__info__name">159****6123</span>
       </div>
       <div class="iconfont top__receiver__icon">&#xe629;</div>
     </div>
@@ -39,7 +39,7 @@ export default {
   background-repeat: no-repeat;
   &__header {
     position: relative;
-    padding-top: 0.26rem;
+    padding-top: 0.2rem;
     line-height: 0.24rem;
     color: $bgColor;
     text-align: center;
